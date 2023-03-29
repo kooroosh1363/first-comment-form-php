@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 50px;
+    background-color: silver;
+
+}
+
+main{
+    width: 400px;
+    padding: 20px 20px ;
+    background-color: rgb(180, 214, 244);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.center{
+    text-align: center;
+}
+.err{
+    background-color: rgb(108, 204, 207);
+    padding: 8px 18px 8px 8px ;
+    text-align: center;
+    color: rgb(94, 93, 93);
+    border-radius: 8px;
+    
+
+}
+.err ul {
+    list-style: none;
+}
+
+.form-control{
+    margin-top: 15px;
+    width: 200px;
+    height: auto;
+    padding: 0px;
+
+}
+.names{
+    width: 380px;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+.emails{
+    width: 380px;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+}
+.websites{
+    width: 380px;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+}
+.comments{
+    width: 380px;
+    height: 150px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+}
+.status{
+    width: 380px;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+    border-inline: none;
+    outline: none;
+
+}
+.laws{
+    padding: 0px 0px 10px 0px ;
+}
+
+.submits{
+    align-items: end;
+}
+/* 
+
+
+main .form-control{
+    padding: 10px;
+}
+
+main .form-control input[type="text"], main .form-control textarea,main .form-control select{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+
+}
+
+main .form-control input[type="submit"]{
+    padding: 10px 30px;
+    background-color: brown;
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    align-items: end;
+} */
