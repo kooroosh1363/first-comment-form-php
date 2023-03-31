@@ -5,7 +5,7 @@
 
 body{
     padding: 50px;
-    background-color: silver;
+    background-color: rgb(197, 70, 70);
 
 }
 
@@ -19,7 +19,8 @@ main{
 
 table, th, td {
     border: 1px solid black;
-  }
+    border-radius: 10px;
+}
 
 .center{
     text-align: center;
@@ -89,6 +90,6 @@ table, th, td {
 }
 
 .submits{
-    background-color: antiquewhite;
+    background-color: rgb(170, 157, 140);
 }
 
