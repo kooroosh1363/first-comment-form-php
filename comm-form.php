@@ -1,10 +1,38 @@
+<?php
+
+$display_form = ($_SERVER['REQUEST_METHOD'] == 'GET') ? true : false;
+$erros =[];
+
+var_dump($_SERVER['REQUEST_METHOD']);// IN LINE CODE lazem nist faghat baraye taiin vazeiyate hast ke ya get hast va ya post 
+
+
+
+if($display_form != true){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $website = $_POST['website'];
+    $comment = $_POST['comment'];
+    $gender = $_POST['gender'];
+    $status = $_POST['status'];
+    $law = $_POST['law'];
+    
+
+    if($name == ''){
+        $eroros[] = 'please enter a name. ';
+
+    }
+
+    if(count($errors) > 0){
+        $display_form = true;
+    }
+}
 
 
 
 
 
 
-
+?>
 
 
 
@@ -15,21 +43,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/comm-form.css">
+    <link rel="stylesheet" href="comm-form.css">
     <title>comment form</title>
 </head>
 
 <body>
 
+    <?php if ($display_form == true) : ?>
 
-    <main>
+        <main>
             <h2 class="center">comment form</h2>
-            <div id="error" class="err">
-                <ul>
-                    <li><span class="error">name is required</span></li>
-                    <li><span class="error">name is required</span></li>
-                </ul>
-            </div>
+            <?php if(count($errors) > 0): ?>
+                <div id="error" class="err">
+                    <ul>
+                        <li><span class="error">name is required</span></li>
+                        <li><span class="error">name is required</span></li>
+                    </ul>
+                </div>
+            <?php endif ?>
             <form method="post">
                 <div class="form-control">
                     <label for="name">name :</label>
@@ -63,13 +94,14 @@
                 <div class="form-control">
                     <input type="checkbox" id="law" name="law" value="law" class="laws">I accept
                 </div>
-                <div class="form-control">
+                <div class="sub">
                     <input type="submit" value="submit" class="submits">
                 </div>
             </form>
-    </main>
+        </main>
+    <?php else : ?>
 
-    <section>
+        <section>
             <table>
                 <thead>
                     <tr>
@@ -82,10 +114,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>ali</td>
-                        <td>raad@gmail.com</td>
-                        <td>raad.com</td>
-                        <td>male</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td>important</td>
                     </tr>
                 </tbody>
@@ -101,7 +133,8 @@
                 </tbody>
             </table>
 
-    </section>
+        </section>
+    <?php endif ?>
 
 </body>
 

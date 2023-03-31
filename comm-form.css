@@ -5,21 +5,36 @@
 
 body{
     padding: 50px;
-    background-color: rgb(197, 70, 70);
+    background-color: rgb(131, 129, 129);
 
 }
 
 main{
     width: 400px;
     padding: 20px 20px ;
-    background-color: rgb(180, 214, 244);
+    background-color: rgb(7, 39, 69);
     margin: 0 auto;
     border-radius: 10px;
 }
 
+section{
+    display: flex;
+    justify-content: center;
+}
+
+
 table, th, td {
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 3px solid rgb(143, 141, 141);
+    border-collapse: collapse;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+th, td {
+    background-color: #96D4D4;
+    padding: 3px 15px 3px 15px ;
+    text-align: center;
+    
 }
 
 .center{
@@ -89,7 +104,18 @@ table, th, td {
     padding: 0px 0px 10px 0px ;
 }
 
+.sub{
+    display: flex;
+    /* align-items: center; */
+}
 .submits{
-    background-color: rgb(170, 157, 140);
+    /* padding: 5px 5px ;
+    align-items: center; */
+    width: 70px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    
 }
 
