@@ -16,6 +16,11 @@ main{
     margin: 0 auto;
     border-radius: 10px;
 }
+
+table, th, td {
+    border: 1px solid black;
+  }
+
 .center{
     text-align: center;
 }
@@ -84,30 +89,6 @@ main{
 }
 
 .submits{
-    align-items: end;
-}
-/* 
-
-
-main .form-control{
-    padding: 10px;
+    background-color: antiquewhite;
 }
 
-main .form-control input[type="text"], main .form-control textarea,main .form-control select{
-    width: 100%;
-    margin-top: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    resize: none;
-
-}
-
-main .form-control input[type="submit"]{
-    padding: 10px 30px;
-    background-color: brown;
-    color: white;
-    width: 100px;
-    border-radius: 10px;
-    align-items: end;
-} */
